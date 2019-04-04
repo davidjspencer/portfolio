@@ -155,7 +155,8 @@ section ul {
 @media only screen and (min-device-width: 820px) {
   body {
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: var(--grg) var(--gcg); }
+    grid-gap: var(--grg) var(--gcg);
+    font-size: 22px; }
 
   nav {
     grid-column: 1 / span 12; }

@@ -200,6 +200,7 @@ section ul {
   body {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
+    font-size: 22px;
   }
   nav {
     grid-column: 1 / span 12;
