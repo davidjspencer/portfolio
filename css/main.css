@@ -18,6 +18,9 @@ body {
   font-family: var(--copy);
   font-size: 20px; }
 
+p {
+  line-height: 1.5em; }
+
 h1 {
   font-family: var(--heading);
   font-weight: 700;
@@ -37,6 +40,8 @@ h4 {
   font-family: var(--heading);
   margin: 2em 0 1em;
   text-transform: uppercase; }
+  h4 span {
+    color: #666666; }
 
 figcaption {
   font-size: .5em; }
