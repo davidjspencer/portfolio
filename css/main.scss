@@ -1,8 +1,102 @@
 :root {
+  --color: #333333;
+  --background-light: #fdfdfd;
+  --background-darker: #f8f8f8;
+  --accent: #e84a5f;
+  --grg: 16px;
+  --gcg: 16px;
+}
+body {
+  display: inline-grid;
+  grid-gap: var(--grg) var(--gcg);
+  width: 100%;
+}
+nav {
+  background: var(--background-darker);
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  ul  {
+    padding: 0;
+    li {
+      text-decoration: none;
+      display: inline-block;
+      text-align: right;
+      float: left;
+      a {
+        text-decoration: none;
+        color: var(--accent);
+      }
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
+}
+@media only screen and (max-device-width : 569px) {
+  body {
+    grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
+    grid-gap: var(--grg) var(--gcg);
+  }
+  nav {
+    grid-column: 1 /span 6;
+    ul  {
+      display: grid;
+      grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
+      grid-gap: var(--grg) var(--gcg);
+      li {
 
+        &:first-child {
+          grid-column: 2;
+        }
+        &:nth-child(2) {
+          grid-column: 4;
+        }
+        &:nth-child(3) {
+          grid-column: 5;
+        }
+      }
+    }
+  }
+  section {
+    grid-column: 2 /span 4;
+  }
+}
+@media only screen and (min-device-width: 820px) {
+  nav {
+    grid-column: 1 / span 12;
+
+    ul  {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: var(--grg) var(--gcg);
+      padding: 0;
+      li {
+        text-decoration: none;
+        display: inline-block;
+        text-align: right;
+        a {
+          text-decoration: none;
+          color: var(--accent);
+        }
+        &:first-child {
+          grid-column: 3;
+          text-align: left;
+        }
+        &:nth-child(2) {
+          grid-column: 9;
+        }
+      }
+    }
+  }
+  section {
+    grid-column: 3 / span 8;
+  }
 }
 
-
+section {
+  background: var(--background-light);
+}
 .responsive-h {
   width: 100%;
   height: auto;
