@@ -48,10 +48,11 @@ figure {
   margin: 1em 0; }
 
 figcaption {
-  font-size: .6em;
+  font-size: .75em;
   text-align: center;
   font-family: var(--heading);
-  margin-top: .6em; }
+  margin-top: .6em;
+  color: #999999; }
 
 nav {
   background: var(--background-light);
