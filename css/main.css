@@ -16,7 +16,8 @@ body {
   grid-gap: var(--grg) var(--gcg);
   width: 100%;
   font-family: var(--copy);
-  font-size: 20px; }
+  font-size: 20px;
+  color: var(--color); }
 
 p {
   line-height: 1.5em; }
@@ -43,14 +44,21 @@ h4 {
   h4 span {
     color: #666666; }
 
+figure {
+  margin: 1em 0; }
+
 figcaption {
-  font-size: .5em; }
+  font-size: .6em;
+  text-align: center;
+  font-family: var(--heading);
+  margin-top: .6em; }
 
 nav {
-  background: var(--color);
+  background: var(--background-light);
   position: -webkit-sticky;
   position: sticky;
-  top: 0; }
+  top: 0;
+  box-shadow: 0 2px 3px var(--background-darker), 0 2px 3px var(--background-darker); }
   nav ul {
     padding: 0; }
     nav ul li {
@@ -60,11 +68,12 @@ nav {
       float: left; }
       nav ul li a {
         text-decoration: none;
-        color: var(--background-light);
+        color: var(--color);
         font-family: var(--heading);
         font-size: .75em; }
       nav ul li .current {
-        color: var(--accent); }
+        color: var(--accent);
+        font-weight: 700; }
       nav ul li:first-child {
         text-align: left; }
 
@@ -157,9 +166,6 @@ nav {
 
   section {
     grid-column: 4 / span 6; } }
-section {
-  background: var(--background-light); }
-
 .responsive-h {
   width: 100%;
   height: auto; }

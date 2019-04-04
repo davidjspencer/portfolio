@@ -15,6 +15,7 @@ body {
   width: 100%;
   font-family: var(--copy);
   font-size: 20px;
+  color: var(--color);
 }
 p {
   line-height: 1.5em;
@@ -42,14 +43,21 @@ h4 {
     color: lighten(#333333, 20);
   }
 }
+figure {
+  margin: 1em 0;
+}
 figcaption {
-  font-size: .5em;
+  font-size: .6em;
+  text-align: center;
+  font-family: var(--heading);
+  margin-top: .6em;
 }
 nav {
-  background: var(--color);
+  background: var(--background-light);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  box-shadow: 0 2px 3px var(--background-darker), 0 2px 3px var(--background-darker);
   ul  {
     padding: 0;
     li {
@@ -59,13 +67,14 @@ nav {
       float: left;
       a {
         text-decoration: none;
-        color: var(--background-light);
+        //color: var(--background-light);
+        color: var(--color);
         font-family: var(--heading);
         font-size: .75em;
       }
       .current {
         color: var(--accent);
-
+        font-weight: 700;
       }
       &:first-child {
         text-align: left;
@@ -212,10 +221,7 @@ nav {
   }
 }
 
-section {
-  background: var(--background-light);
 
-}
 .responsive-h {
   width: 100%;
   height: auto;
