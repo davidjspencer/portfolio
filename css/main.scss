@@ -89,6 +89,13 @@ nav {
     color: var(--accent);
   }
 }
+section ul {
+  //list-style-type: none;
+  padding: 0;
+  li {
+    margin-bottom: .5em;
+  }
+}
 @media only screen and (max-device-width : 569px) {
   body {
     grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
