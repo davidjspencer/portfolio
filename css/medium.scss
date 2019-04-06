@@ -21,7 +21,10 @@
       }
     }
   }
-  section {
+  .content-block {
+    grid-column: 2 / span 10;
+  }
+  figure {
     grid-column: 2 / span 10;
   }
   .projects {
@@ -54,8 +57,11 @@
       }
     }
   }
-  section {
+  .content-block {
     grid-column: 3 / span 8;
+  }
+  figure {
+    grid-column: 3 /span 8;
   }
   .projects {
     .card {

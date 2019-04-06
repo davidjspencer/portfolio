@@ -27,8 +27,11 @@
       }
     }
   }
-  section {
+  .content-block {
     grid-column: 2 /span 4;
+  }
+  figure {
+    grid-column: span 6;
   }
   .projects {
     .card {

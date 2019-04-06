@@ -1,0 +1,37 @@
+@media only screen and (min-device-width: 820px) {
+  body {
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: var(--grg) var(--gcg);
+    font-size: 22px;
+  }
+  nav {
+    grid-column: 1 / span 12;
+
+    ul  {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-gap: var(--grg) var(--gcg);
+      padding: 0;
+      li {
+
+        a {
+
+        }
+        &:first-child {
+          grid-column: 4;
+          text-align: left;
+        }
+        &:nth-child(2) {
+          grid-column: 8;
+        }
+      }
+    }
+  }
+  .content-block {
+    grid-column: 4 / span 6;
+  }
+  figure {
+    //grid-column: 3 / span 8;
+    grid-column: 4 / span 6;
+  }
+}
