@@ -105,7 +105,8 @@ nav {
   font-size: 1em;
   color: var(--accent); }
 
-main {
+main,
+footer {
   grid-column: 1 / span 12; }
 
 .content-block ul {
