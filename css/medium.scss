@@ -1,5 +1,6 @@
 @media only screen and (min-device-width : 570px) and (max-device-width : 694px) {
-  body {
+  body,
+  main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
   }
@@ -34,7 +35,8 @@
   }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px) {
-  body {
+  body,
+  main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
   }

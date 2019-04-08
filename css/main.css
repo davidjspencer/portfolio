@@ -11,7 +11,8 @@
 * {
   box-sizing: border-box; }
 
-body {
+body,
+main {
   display: inline-grid;
   grid-gap: var(--grg) var(--gcg);
   width: 100%;
@@ -26,7 +27,7 @@ body {
     linear-gradient(60deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light)),
     linear-gradient(120deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light));
     background-size: 70px 120px;
-  
+
     background: radial-gradient(var(--background-darker) 3px, transparent 4px),
       radial-gradient(var(--background-darker) 3px, transparent 4px),
       linear-gradient(var(--background-light) 4px, transparent 0),
@@ -104,6 +105,9 @@ nav {
   font-size: 1em;
   color: var(--accent); }
 
+main {
+  grid-column: 1 / span 12; }
+
 .content-block ul {
   list-style-type: none;
   padding: 0; }
@@ -165,7 +169,8 @@ nav {
   height: auto; }
 
 @media only screen and (max-device-width: 569px) {
-  body {
+  body,
+  main {
     grid-template-columns: var(--gcg) repeat(4, 1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg); }
 
@@ -195,7 +200,8 @@ nav {
   .projects .card {
     grid-column: span 12; } }
 @media only screen and (min-device-width: 570px) and (max-device-width: 694px) {
-  body {
+  body,
+  main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg); }
 
@@ -221,7 +227,8 @@ nav {
   .projects .card {
     grid-column: span 6; } }
 @media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
-  body {
+  body,
+  main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg); }
 
@@ -247,7 +254,8 @@ nav {
   .projects .card {
     grid-column: span 6; } }
 @media only screen and (min-device-width: 820px) {
-  body {
+  body,
+  main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     font-size: 22px; }

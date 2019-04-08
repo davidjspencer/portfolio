@@ -9,7 +9,8 @@
   --copy: 'EB Garamond', serif;
 }
 * {box-sizing: border-box;}
-body {
+body,
+main {
   display: inline-grid;
   grid-gap: var(--grg) var(--gcg);
   width: 100%;
@@ -115,6 +116,9 @@ nav {
     // font-family: var(--copy);
     color: var(--accent);
   }
+}
+main {
+  grid-column: 1 / span 12;
 }
 .content-block ul {
   list-style-type: none;
