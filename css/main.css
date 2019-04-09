@@ -105,9 +105,6 @@ nav {
   font-size: 1em;
   color: var(--accent); }
 
-main {
-  grid-column: 1 / span 12; }
-
 .content-block ul {
   list-style-type: none;
   padding: 0; }
@@ -172,7 +169,8 @@ main {
   body,
   main {
     grid-template-columns: var(--gcg) repeat(4, 1fr) var(--gcg);
-    grid-gap: var(--grg) var(--gcg); }
+    grid-gap: var(--grg) var(--gcg);
+    grid-column: 1/span 6; }
 
   footer {
     grid-column: 1/span 6; }
@@ -206,7 +204,8 @@ main {
   body,
   main {
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: var(--grg) var(--gcg); }
+    grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 12; }
 
   nav {
     grid-column: 1 / span 12; }
@@ -233,7 +232,8 @@ main {
   body,
   main {
     grid-template-columns: repeat(12, 1fr);
-    grid-gap: var(--grg) var(--gcg); }
+    grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 12; }
 
   nav {
     grid-column: 1 / span 12; }
@@ -261,6 +261,7 @@ main {
   main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 12;
     font-size: 22px; }
 
   nav {

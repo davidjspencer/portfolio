@@ -3,6 +3,7 @@
   main {
     grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 6
   }
   footer {
     grid-column: 1 / span 6

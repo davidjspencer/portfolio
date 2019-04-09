@@ -3,6 +3,7 @@
   main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 12;
   }
   nav {
     grid-column: 1 / span 12;
@@ -39,6 +40,7 @@
   main {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
+    grid-column: 1 / span 12;
   }
   nav {
     grid-column: 1 / span 12;
