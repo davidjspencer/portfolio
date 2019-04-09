@@ -27,7 +27,7 @@ main {
     linear-gradient(60deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light)),
     linear-gradient(120deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light));
     background-size: 70px 120px;
-
+  
     background: radial-gradient(var(--background-darker) 3px, transparent 4px),
       radial-gradient(var(--background-darker) 3px, transparent 4px),
       linear-gradient(var(--background-light) 4px, transparent 0),
@@ -105,8 +105,7 @@ nav {
   font-size: 1em;
   color: var(--accent); }
 
-main,
-footer {
+main {
   grid-column: 1 / span 12; }
 
 .content-block ul {
@@ -174,6 +173,9 @@ footer {
   main {
     grid-template-columns: var(--gcg) repeat(4, 1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg); }
+
+  footer {
+    grid-column: 1/span 6; }
 
   h1 {
     font-size: 2em;

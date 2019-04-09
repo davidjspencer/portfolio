@@ -4,6 +4,9 @@
     grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg);
   }
+  footer {
+    grid-column: 1 / span 6
+  }
   h1 {
     font-size: 2em;
     line-height: 1.1em;
