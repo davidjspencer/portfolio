@@ -1,9 +1,15 @@
 @media only screen and (min-device-width : 570px) and (max-device-width : 694px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
+  }
+  footer {
+    div {
+      grid-column: 2 / span 10;
+    }
   }
   nav {
     grid-column: 1 / span 12;
@@ -37,10 +43,16 @@
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
+  }
+  footer {
+    div {
+      grid-column: 3 / span 8;
+    }
   }
   nav {
     grid-column: 1 / span 12;

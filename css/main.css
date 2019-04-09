@@ -15,7 +15,6 @@ body,
 main {
   display: inline-grid;
   grid-gap: var(--grg) var(--gcg);
-  width: 100%;
   font-family: var(--copy);
   font-size: 20px;
   color: var(--color);
@@ -165,15 +164,31 @@ nav {
   width: 100%;
   height: auto; }
 
+footer {
+  display: grid;
+  grid-gap: var(--grg) var(--gcg);
+  background: var(--color);
+  color: var(--background-light);
+  margin-top: 2em;
+  padding: 3em 0;
+  font-family: var(--heading); }
+  footer div {
+    grid-column: 2 / span 4; }
+    footer div h5 {
+      margin: .25em 0;
+      color: #666666; }
+    footer div a {
+      color: var(--background-light);
+      text-decoration: none;
+      font-size: .75em; }
+
 @media only screen and (max-device-width: 569px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: var(--gcg) repeat(4, 1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 6; }
-
-  footer {
-    grid-column: 1/span 6; }
 
   h1 {
     font-size: 2em;
@@ -202,10 +217,14 @@ nav {
     grid-column: span 12; } }
 @media only screen and (min-device-width: 570px) and (max-device-width: 694px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12; }
+
+  footer div {
+    grid-column: 2 / span 10; }
 
   nav {
     grid-column: 1 / span 12; }
@@ -230,10 +249,14 @@ nav {
     grid-column: span 6; } }
 @media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12; }
+
+  footer div {
+    grid-column: 3 / span 8; }
 
   nav {
     grid-column: 1 / span 12; }
@@ -258,11 +281,15 @@ nav {
     grid-column: span 6; } }
 @media only screen and (min-device-width: 820px) {
   body,
-  main {
+  main,
+  footer {
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
     font-size: 22px; }
+
+  footer div {
+    grid-column: 4 / span 6; }
 
   nav {
     grid-column: 1 / span 12; }

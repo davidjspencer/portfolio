@@ -8,12 +8,13 @@
   --heading: 'Roboto', sans-serif;
   --copy: 'EB Garamond', serif;
 }
-* {box-sizing: border-box;}
+* {
+  box-sizing: border-box;
+}
 body,
 main {
   display: inline-grid;
   grid-gap: var(--grg) var(--gcg);
-  width: 100%;
   font-family: var(--copy);
   font-size: 20px;
   color: var(--color);
@@ -196,6 +197,32 @@ nav {
 .responsive-h {
   width: 100%;
   height: auto;
+}
+footer {
+  display: grid;
+  grid-gap: var(--grg) var(--gcg);
+  background: var(--color);
+  color: var(--background-light);
+  margin-top: 2em;
+  padding: 3em 0;
+  font-family: var(--heading);
+
+  div {
+    grid-column: 2 / span 4;
+    h5 {
+      margin: .25em 0;
+      color: lighten(#333333, 20) // bullet colour
+    }
+    a {
+      color: var(--background-light);
+      text-decoration: none;
+      font-size: .75em;
+      // font-size: .75em;
+      // display: inline-block;
+      // float: left;
+    }
+  }
+
 }
 @import 'small';
 @import 'medium';
