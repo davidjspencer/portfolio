@@ -43,13 +43,15 @@ p {
   line-height: 1.5em; }
 
 a.link {
-  text-decoration: none;
+  background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
+  background-position: 0 100%;
+  background-repeat: repeat-x;
+  background-size: 1px 1px;
   color: inherit;
-  line-height: 1em;
-  border-bottom: solid 2px; }
+  text-decoration: none;
+  transition: background-size .2s; }
   a.link:hover {
-    border-bottom: var(--accent) solid 4px;
-    color: var(--accent); }
+    background-size: 4px 50px; }
 
 h1 {
   font-family: var(--heading);
