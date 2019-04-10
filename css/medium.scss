@@ -1,7 +1,9 @@
 @media only screen and (min-device-width : 570px) and (max-device-width : 694px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
@@ -40,11 +42,36 @@
       grid-column: span 6;
     }
   }
+  .project-nav {
+    font-size: 1em;
+    .project-prev {
+      display: inline-block;
+      grid-column: 3 /span 4;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    .project-next {
+      display: inline-block;
+      grid-column: 7 /span 4;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    a {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
+  }
 }
 @media only screen and (min-device-width : 695px) and (max-device-width : 819px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
@@ -82,6 +109,29 @@
   .projects {
     .card {
       grid-column: span 6;
+    }
+  }
+  .project-nav {
+    font-size: 1em;
+    .project-prev {
+      display: inline-block;
+      grid-column: 3 /span 4;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    .project-next {
+      display: inline-block;
+      grid-column: 7 /span 4;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    a {
+      padding-left: 1em;
+      padding-right: 1em;
     }
   }
 }

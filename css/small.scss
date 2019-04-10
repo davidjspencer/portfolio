@@ -1,7 +1,9 @@
 @media only screen and (max-device-width : 569px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: var(--gcg) repeat(4,1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 6;
@@ -55,6 +57,29 @@
           //margin-right: .25em;
         }
       }
+    }
+  }
+  .project-nav {
+    font-size: 1em;
+    .project-prev {
+      display: inline-block;
+      grid-column: 2 /span 2;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    .project-next {
+      display: inline-block;
+      grid-column: 4 /span 2;
+      .description {
+        opacity: 1;
+        top: 2em;
+      }
+    }
+    a {
+      padding-left: 1em;
+      padding-right: 1em;
     }
   }
 }

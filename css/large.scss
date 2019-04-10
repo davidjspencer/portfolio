@@ -1,7 +1,9 @@
 @media only screen and (min-device-width: 820px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
@@ -41,5 +43,26 @@
   figure {
     //grid-column: 3 / span 8;
     grid-column: 4 / span 6;
+  }
+  .project-nav {
+    font-size: 1em;
+    .project-prev {
+      display: inline-block;
+      grid-column: 4 /span 3;
+      .description {
+        top: 2em;
+      }
+    }
+    .project-next {
+      display: inline-block;
+      grid-column: 7 /span 3;
+      .description {
+        top: 2em;
+      }
+    }
+    a {
+      padding-left: 1em;
+      padding-right: 1em;
+    }
   }
 }

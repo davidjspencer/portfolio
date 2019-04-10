@@ -251,6 +251,73 @@ nav {
   width: 100%;
   height: auto;
 }
+.project-nav {
+  margin: 100px 0 100px 0;
+  text-align: center;
+
+  position: relative;
+  color: inherit;
+  a {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: block;
+    line-height: 1.25em;
+    background: var(--background-darker);
+    border-bottom: 1px solid;
+    &:hover > .description {
+      opacity: 1;
+    }
+    &:hover > .direction::after {
+      width: 100%;
+    }
+  }
+  .direction {
+    &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    height: 4px;
+    width: 60%;
+    background-color: var(--color);
+    transition: width 0.25s ease;
+    }
+  }
+  .project-next .direction {
+    &::after {
+      left: 0;
+    }
+  }
+  .project-prev .direction {
+    &::after {
+      right: 0;
+    }
+  }
+  .direction {
+    font-family: var(--heading);
+
+    &:hover::after {
+
+    }
+
+  }
+  .description {
+    padding-top: 1.25em;;
+    font-size: .75em;
+    line-height: 1em;
+    position: absolute;
+    left: 0;
+    transform: translate3d(0, -12px, 0);
+    width: 100%;
+    cursor: default;
+    opacity: 0;
+    transition: transform .25s ease, opacity .25s ease;
+    transition-delay: 0s;
+    pointer-events: none;
+    word-wrap: break-word;
+  }
+}
 footer {
   display: grid;
   grid-gap: var(--grg) var(--gcg);

@@ -196,6 +196,53 @@ nav {
   width: 100%;
   height: auto; }
 
+.project-nav {
+  margin: 100px 0 100px 0;
+  text-align: center;
+  position: relative;
+  color: inherit; }
+  .project-nav a {
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: block;
+    line-height: 1.25em;
+    background: var(--background-darker);
+    border-bottom: 1px solid; }
+    .project-nav a:hover > .description {
+      opacity: 1; }
+    .project-nav a:hover > .direction::after {
+      width: 100%; }
+  .project-nav .direction::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: -4px;
+    height: 4px;
+    width: 60%;
+    background-color: var(--color);
+    transition: width 0.25s ease; }
+  .project-nav .project-next .direction::after {
+    left: 0; }
+  .project-nav .project-prev .direction::after {
+    right: 0; }
+  .project-nav .direction {
+    font-family: var(--heading); }
+  .project-nav .description {
+    padding-top: 1.25em;
+    font-size: .75em;
+    line-height: 1em;
+    position: absolute;
+    left: 0;
+    transform: translate3d(0, -12px, 0);
+    width: 100%;
+    cursor: default;
+    opacity: 0;
+    transition: transform .25s ease, opacity .25s ease;
+    transition-delay: 0s;
+    pointer-events: none;
+    word-wrap: break-word; }
+
 footer {
   display: grid;
   grid-gap: var(--grg) var(--gcg);
@@ -218,7 +265,9 @@ footer {
 @media only screen and (max-device-width: 569px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: var(--gcg) repeat(4, 1fr) var(--gcg);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 6; }
@@ -247,11 +296,31 @@ footer {
     grid-column: span 6; }
 
   .projects .card {
-    grid-column: span 12; } }
+    grid-column: span 12; }
+
+  .project-nav {
+    font-size: 1em; }
+    .project-nav .project-prev {
+      display: inline-block;
+      grid-column: 2 /span 2; }
+      .project-nav .project-prev .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav .project-next {
+      display: inline-block;
+      grid-column: 4 /span 2; }
+      .project-nav .project-next .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav a {
+      padding-left: 1em;
+      padding-right: 1em; } }
 @media only screen and (min-device-width: 570px) and (max-device-width: 694px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12; }
@@ -279,11 +348,31 @@ footer {
     grid-column: 2 / span 10; }
 
   .projects .card {
-    grid-column: span 6; } }
+    grid-column: span 6; }
+
+  .project-nav {
+    font-size: 1em; }
+    .project-nav .project-prev {
+      display: inline-block;
+      grid-column: 3 /span 4; }
+      .project-nav .project-prev .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav .project-next {
+      display: inline-block;
+      grid-column: 7 /span 4; }
+      .project-nav .project-next .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav a {
+      padding-left: 1em;
+      padding-right: 1em; } }
 @media only screen and (min-device-width: 695px) and (max-device-width: 819px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12; }
@@ -311,11 +400,31 @@ footer {
     grid-column: 3 /span 8; }
 
   .projects .card {
-    grid-column: span 6; } }
+    grid-column: span 6; }
+
+  .project-nav {
+    font-size: 1em; }
+    .project-nav .project-prev {
+      display: inline-block;
+      grid-column: 3 /span 4; }
+      .project-nav .project-prev .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav .project-next {
+      display: inline-block;
+      grid-column: 7 /span 4; }
+      .project-nav .project-next .description {
+        opacity: 1;
+        top: 2em; }
+    .project-nav a {
+      padding-left: 1em;
+      padding-right: 1em; } }
 @media only screen and (min-device-width: 820px) {
   body,
   main,
-  footer {
+  footer,
+  .project-nav {
+    display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-gap: var(--grg) var(--gcg);
     grid-column: 1 / span 12;
@@ -341,6 +450,22 @@ footer {
     grid-column: 4 / span 6; }
 
   figure {
-    grid-column: 4 / span 6; } }
+    grid-column: 4 / span 6; }
+
+  .project-nav {
+    font-size: 1em; }
+    .project-nav .project-prev {
+      display: inline-block;
+      grid-column: 4 /span 3; }
+      .project-nav .project-prev .description {
+        top: 2em; }
+    .project-nav .project-next {
+      display: inline-block;
+      grid-column: 7 /span 3; }
+      .project-nav .project-next .description {
+        top: 2em; }
+    .project-nav a {
+      padding-left: 1em;
+      padding-right: 1em; } }
 
 /*# sourceMappingURL=main.css.map */
