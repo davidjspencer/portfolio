@@ -41,6 +41,8 @@ main {
 
 p {
   line-height: 1.5em; }
+  p span {
+    color: var(--accent); }
 
 a.link {
   background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);
@@ -183,10 +185,12 @@ nav {
       font-family: var(--heading); }
       .projects .card .card-text p {
         margin: 0;
-        line-height: 1em; }
+        line-height: 1em;
+        color: var(--color); }
       .projects .card .card-text span {
         font-size: .5em;
-        margin-right: .5em; }
+        margin-right: .5em;
+        color: var(--accent); }
 
 .responsive-h {
   width: 100%;

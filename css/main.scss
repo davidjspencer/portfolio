@@ -44,6 +44,9 @@ main {
 }
 p {
   line-height: 1.5em;
+  span {
+    color: var(--accent);
+  }
 }
 a.link {
   // text-decoration: none;
@@ -234,10 +237,12 @@ nav {
       p {
         margin: 0;
         line-height: 1em;
+        color: var(--color)
       }
       span {
         font-size: .5em;
         margin-right: .5em;
+        color: var(--accent);
       }
     }
   }
