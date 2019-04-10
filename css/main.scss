@@ -45,6 +45,16 @@ main {
 p {
   line-height: 1.5em;
 }
+a.link {
+  text-decoration: none;
+  color: inherit;
+  line-height: 1em;
+  border-bottom:  solid 2px;
+  &:hover{
+    border-bottom: var(--accent) solid 4px;
+    color: var(--accent);
+  }
+}
 h1 {
   font-family: var(--heading);
   font-weight: 700;
@@ -62,6 +72,9 @@ h3 {
   font-family: var(--heading);
   margin: 2em 0 1em;
   text-transform: uppercase;
+  &::after {
+
+  }
 }
 h4 {
   font-family: var(--heading);
@@ -86,6 +99,7 @@ nav {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
+  z-index: 10;
   box-shadow: 0 2px 3px var(--background-darker), 0 2px 3px var(--background-darker);
   ul  {
     padding: 0;
@@ -100,10 +114,30 @@ nav {
         color: var(--color);
         font-family: var(--heading);
         font-size: .75em;
+        display: inline-block;
+        &::after {
+          content: '';
+          display: block;
+          width: 0;
+          height: 2px;
+          background: var(--accent);
+          transition: width .3s;
+        }
+        &:hover::after {
+          width: 100%;
+          //transition: width .3s;
+        }
       }
       .current {
         color: var(--accent);
         font-weight: 700;
+        &::after {
+          content: '';
+          display: block;
+          width: 100%;
+          height: 2px;
+          background: var(--accent);
+        }
       }
       &:first-child {
         text-align: left;
@@ -210,16 +244,14 @@ footer {
   div {
     grid-column: 2 / span 4;
     h5 {
-      margin: .25em 0;
+      margin: .75em 0 0;
       color: lighten(#333333, 20) // bullet colour
     }
     a {
       color: var(--background-light);
       text-decoration: none;
       font-size: .75em;
-      // font-size: .75em;
-      // display: inline-block;
-      // float: left;
+      margin-top: 0;
     }
   }
 
