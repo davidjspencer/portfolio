@@ -61,7 +61,16 @@ h3 {
   margin: 2em 0 1em;
   text-transform: uppercase;
   &::after {
-
+    content: " ";
+    display: block;
+    width: 40px;
+    height: 3px;
+    border-radius: 2px;
+    background-color: #FCDD0F;
+    box-shadow: 0 0 0 1px rgba(194, 200, 198, 0.5);
+    position: relative;
+    bottom: -.25em;
+    left: 0;
   }
 }
 h4 {
