@@ -1,7 +1,7 @@
 :root {
-  --color: #333333;
-  --background-light: #fdfdfd;
-  --background-darker: #fbf5f5;//#f8f8f8;
+  --color: #404745;//#333333;
+  --background-light: #e1e4e3;//#fdfdfd
+  --background-darker: #C6CCCA;//#fbf5f5//#f8f8f8;
   --accent: #e84a5f;
   --grg: 16px;
   --gcg: 16px;
@@ -18,29 +18,7 @@ main {
   font-family: var(--copy);
   font-size: 20px;
   color: var(--color);
-/*
-  background-color: var(--background-darker);
-  background-image:
-  repeating-linear-gradient(120deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-  repeating-linear-gradient(60deg, rgba(255,255,255,.1), rgba(255,255,255,.1) 1px, transparent 1px, transparent 60px),
-  linear-gradient(60deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light)),
-  linear-gradient(120deg, var(--background-light) 25%, transparent 25%, transparent 75%, var(--background-light) 75%, var(--background-light));
-  background-size: 70px 120px;
-
-  background: radial-gradient(var(--background-darker) 3px, transparent 4px),
-    radial-gradient(var(--background-darker) 3px, transparent 4px),
-    linear-gradient(var(--background-light) 4px, transparent 0),
-    linear-gradient(45deg, transparent 74px, transparent 75px, var(--background-darker) 75px, var(--background-darker) 76px, transparent 77px, transparent 109px),
-    linear-gradient(-45deg, transparent 75px, transparent 76px, var(--background-darker) 76px, var(--background-darker) 77px, transparent 78px, transparent 109px),
-    var(--background-light);
-    background-size: 109px 109px, 109px 109px,100% 6px, 109px 109px, 109px 109px;
-    background-position: 54px 55px, 0px 0px, 0px 0px, 0px 0px, 0px 0px;
-*/
-    background:
-    radial-gradient(circle at 0% 50%, rgba(96, 16, 48, 0) 9px, var(--background-darker) 10px, rgba(96, 16, 48, 0) 11px) 0px 10px,
-    radial-gradient(at 100% 100%,      rgba(96, 16, 48, 0) 9px, var(--background-darker) 10px, rgba(96, 16, 48, 0) 11px),
-    var(--background-light);
-    background-size: 20px 20px;
+  background: var(--background-light);
 }
 p {
   line-height: 1.5em;
@@ -49,14 +27,6 @@ p {
   }
 }
 a.link {
-  // text-decoration: none;
-  // color: inherit;
-  // line-height: 1em;
-  // border-bottom:  solid 2px;
-  // &:hover{
-  //   border-bottom: var(--accent) solid 4px;
-  //   color: var(--accent);
-  // }
   background:
      linear-gradient(
        to bottom, var(--accent) 0%,
@@ -118,7 +88,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 2px 3px var(--background-darker), 0 2px 3px var(--background-darker);
+  box-shadow: 0 1px 2px var(--background-darker), 0 1px 2px var(--background-darker);
   ul  {
     padding: 0;
     li {
@@ -128,7 +98,6 @@ nav {
       float: left;
       a {
         text-decoration: none;
-        //color: var(--background-light);
         color: var(--color);
         font-family: var(--heading);
         font-size: .75em;
