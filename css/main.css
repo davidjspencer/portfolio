@@ -47,7 +47,7 @@ h1 {
 h2 {
   font-family: var(--heading);
   font-weight: 400;
-  color: #666666; }
+  color: #697573; }
 
 h3 {
   font-family: var(--heading);
@@ -70,7 +70,7 @@ h4 {
   margin: 2em 0 1em;
   text-transform: uppercase; }
   h4 span {
-    color: #666666; }
+    color: #697573; }
 
 figure {
   margin: 1em 0; }
@@ -80,15 +80,17 @@ figcaption {
   text-align: center;
   font-family: var(--heading);
   padding-top: .25em;
-  color: #999999; }
+  color: #9da7a5; }
+
+.navbar1 {
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 20px 0px; }
 
 nav {
   background: var(--background-light);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  z-index: 10;
-  box-shadow: 0 1px 2px var(--background-darker), 0 1px 2px var(--background-darker); }
+  z-index: 10; }
   nav ul {
     padding: 0; }
     nav ul li {
@@ -134,7 +136,7 @@ nav {
     margin-bottom: .5em; }
     .content-block ul li::before {
       content: "\2022";
-      color: #666666;
+      color: #697573;
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -250,7 +252,7 @@ footer {
     grid-column: 2 / span 4; }
     footer div h5 {
       margin: .75em 0 0;
-      color: #666666; }
+      color: #697573; }
     footer div a {
       color: var(--background-light);
       text-decoration: none;

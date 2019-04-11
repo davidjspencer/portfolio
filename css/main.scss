@@ -54,7 +54,7 @@ h1 {
 h2 {
   font-family: var(--heading);
   font-weight: 400;
-  color: lighten(#333333, 20);
+  color: lighten(#393f3e, 20);
 }
 h3 {
   font-family: var(--heading);
@@ -78,7 +78,7 @@ h4 {
   margin: 2em 0 1em;
   text-transform: uppercase;
   span {
-    color: lighten(#333333, 20);
+    color: lighten(#393f3e, 20);
   }
 }
 figure {
@@ -89,7 +89,10 @@ figcaption {
   text-align: center;
   font-family: var(--heading);
   padding-top: .25em;
-  color: lighten(#333333, 40);
+  color: lighten(#393f3e, 40);
+}
+.navbar1 { // class added on scroll
+  box-shadow: rgba(0, 0, 0, 0.03) 0px 4px 8px 0px, rgba(0, 0, 0, 0.03) 0px 6px 20px 0px
 }
 nav {
   background: var(--background-light);
@@ -97,7 +100,7 @@ nav {
   position: sticky;
   top: 0;
   z-index: 10;
-  box-shadow: 0 1px 2px var(--background-darker), 0 1px 2px var(--background-darker);
+  //box-shadow: 0 1px 2px var(--background-darker), 0 1px 2px var(--background-darker);
   ul  {
     padding: 0;
     li {
@@ -156,7 +159,7 @@ nav {
     margin-bottom: .5em;
     &::before {
       content: "\2022";
-      color: lighten(#333333, 20);
+      color: lighten(#393f3e, 20);
       font-weight: bold;
       display: inline-block;
       width: 1em;
@@ -312,7 +315,7 @@ footer {
     grid-column: 2 / span 4;
     h5 {
       margin: .75em 0 0;
-      color: lighten(#333333, 20) // bullet colour
+      color: lighten(#393f3e, 20) // bullet colour
     }
     a {
       color: var(--background-light);
