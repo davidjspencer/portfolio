@@ -2,7 +2,7 @@
   --text-color: #393f3e;
   --background-light: #e1e4e3;
   --background-darker: #C6CCCA;
-  --accent: #e84a5f;
+  --accent: #C5463E;
   --grg: 16px;
   --gcg: 16px;
   --heading: 'Roboto', sans-serif;
@@ -190,7 +190,9 @@ nav {
     display: block;
     line-height: 1.25em;
     background: var(--background-darker);
-    border-bottom: 1px solid; }
+    border-bottom: 1px solid;
+    padding-top: .25em;
+    padding-bottom: .25em; }
     .project-nav a:hover > .description {
       opacity: 1; }
     .project-nav a:hover > .direction::after {
@@ -211,7 +213,7 @@ nav {
   .project-nav .direction {
     font-family: var(--heading); }
   .project-nav .description {
-    padding-top: 1.25em;
+    padding-top: 1.5em;
     font-size: .75em;
     line-height: 1em;
     position: absolute;

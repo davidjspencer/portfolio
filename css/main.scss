@@ -2,7 +2,7 @@
   --text-color: #393f3e;//#404745;//#333333;
   --background-light: #e1e4e3;//#fdfdfd
   --background-darker: #C6CCCA;//#fbf5f5//#f8f8f8;
-  --accent: #e84a5f;
+  --accent: #C5463E;//#e84a5f;
   --grg: 16px;
   --gcg: 16px;
   --heading: 'Roboto', sans-serif;
@@ -235,6 +235,8 @@ nav {
     line-height: 1.25em;
     background: var(--background-darker);
     border-bottom: 1px solid;
+    padding-top: .25em;
+    padding-bottom: .25em;
     &:hover > .description {
       opacity: 1;
     }
@@ -273,7 +275,7 @@ nav {
 
   }
   .description {
-    padding-top: 1.25em;;
+    padding-top: 1.5em;;
     font-size: .75em;
     line-height: 1em;
     position: absolute;
