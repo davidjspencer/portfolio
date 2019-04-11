@@ -1,5 +1,5 @@
 :root {
-  --color: #404745;//#333333;
+  --text-color: #393f3e//#404745;//#333333;
   --background-light: #e1e4e3;//#fdfdfd
   --background-darker: #C6CCCA;//#fbf5f5//#f8f8f8;
   --accent: #e84a5f;
@@ -17,7 +17,7 @@ main {
   grid-gap: var(--grg) var(--gcg);
   font-family: var(--copy);
   font-size: 20px;
-  color: var(--color);
+  color: var(--text-color);
   background: var(--background-light);
 }
 p {
@@ -98,7 +98,7 @@ nav {
       float: left;
       a {
         text-decoration: none;
-        color: var(--color);
+        color: var(--text-color);
         font-family: var(--heading);
         font-size: .75em;
         display: inline-block;
@@ -207,7 +207,7 @@ nav {
       p {
         margin: 0;
         line-height: 1em;
-        color: var(--color)
+        color: var(--text-color)
       }
       span {
         font-size: .5em;
@@ -250,7 +250,7 @@ nav {
     bottom: -4px;
     height: 4px;
     width: 60%;
-    background-color: var(--color);
+    background-color: var(--text-color);
     transition: width 0.25s ease;
     }
   }
@@ -291,7 +291,7 @@ nav {
 footer {
   display: grid;
   grid-gap: var(--grg) var(--gcg);
-  background: var(--color);
+  background: var(--text-color);
   color: var(--background-light);
   margin-top: 2em;
   padding: 3em 0;

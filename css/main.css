@@ -1,5 +1,5 @@
 :root {
-  --color: #404745;
+  --text-color: #393f3e//#404745;
   --background-light: #e1e4e3;
   --background-darker: #C6CCCA;
   --accent: #e84a5f;
@@ -17,7 +17,7 @@ main {
   grid-gap: var(--grg) var(--gcg);
   font-family: var(--copy);
   font-size: 20px;
-  color: var(--color);
+  color: var(--text-color);
   background: var(--background-light); }
 
 p {
@@ -87,7 +87,7 @@ nav {
       float: left; }
       nav ul li a {
         text-decoration: none;
-        color: var(--color);
+        color: var(--text-color);
         font-family: var(--heading);
         font-size: .75em;
         display: inline-block; }
@@ -168,7 +168,7 @@ nav {
       .projects .card .card-text p {
         margin: 0;
         line-height: 1em;
-        color: var(--color); }
+        color: var(--text-color); }
       .projects .card .card-text span {
         font-size: .5em;
         margin-right: .5em;
@@ -202,7 +202,7 @@ nav {
     bottom: -4px;
     height: 4px;
     width: 60%;
-    background-color: var(--color);
+    background-color: var(--text-color);
     transition: width 0.25s ease; }
   .project-nav .project-next .direction::after {
     left: 0; }
@@ -228,7 +228,7 @@ nav {
 footer {
   display: grid;
   grid-gap: var(--grg) var(--gcg);
-  background: var(--color);
+  background: var(--text-color);
   color: var(--background-light);
   margin-top: 2em;
   padding: 3em 0;
