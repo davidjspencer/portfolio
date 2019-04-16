@@ -44,6 +44,9 @@
     //grid-column: 3 / span 8;
     grid-column: 4 / span 6;
   }
+  figure.wide-image {
+    grid-column: 3 / span 8;
+  }
   .project-nav {
     font-size: 1em;
     .project-prev {

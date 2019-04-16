@@ -396,6 +396,9 @@ footer {
   figure {
     grid-column: 3 /span 8; }
 
+  figure.wide-image {
+    grid-column: 2 / span 10; }
+
   .projects .card {
     grid-column: span 6; }
 
@@ -448,6 +451,9 @@ footer {
 
   figure {
     grid-column: 4 / span 6; }
+
+  figure.wide-image {
+    grid-column: 3 / span 8; }
 
   .project-nav {
     font-size: 1em; }
