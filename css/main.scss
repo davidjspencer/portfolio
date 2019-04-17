@@ -147,7 +147,7 @@ nav {
 .hero {
   span {
     font-size: 1em;
-    // font-family: var(--copy);
+    margin-right: .75em;
     color: var(--accent);
   }
 }
@@ -223,7 +223,7 @@ nav {
       }
       span {
         font-size: .5em;
-        margin-right: .5em;
+        margin-right: 1em;
         color: var(--accent);
       }
     }

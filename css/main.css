@@ -127,6 +127,7 @@ nav {
 
 .hero span {
   font-size: 1em;
+  margin-right: .75em;
   color: var(--accent); }
 
 .content-block ul {
@@ -184,7 +185,7 @@ nav {
         color: var(--text-color); }
       .projects .card .card-text span {
         font-size: .5em;
-        margin-right: .5em;
+        margin-right: 1em;
         color: var(--accent); }
 
 .responsive-h {
