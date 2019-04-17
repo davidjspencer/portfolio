@@ -150,8 +150,11 @@ nav {
 .hero {
   span {
     font-size: 1em;
-    margin-right: .75em;
+    margin-left: .75em;
     color: var(--accent);
+    &:first-of-type{
+      margin-left: 0;
+    }
   }
 }
 
@@ -217,7 +220,6 @@ nav {
     }
     .card-text {
       padding: .5em;
-      vertical-align: middle;
       font-family: var(--heading);
       p {
         margin: 0;
