@@ -46,7 +46,7 @@ a.link {
 h1 {
   font-family: var(--heading);
   font-weight: 700;
-  margin: 2em 0 1em;
+  margin: 2em 0 .25em;
   span {
     color: var(--accent);
   }
@@ -80,6 +80,9 @@ h4 {
   span {
     color: lighten(#393f3e, 20);
   }
+}
+.highlight {
+  color: var(--accent);
 }
 figure {
   margin: 1em 0;

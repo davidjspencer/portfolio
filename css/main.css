@@ -40,7 +40,7 @@ a.link {
 h1 {
   font-family: var(--heading);
   font-weight: 700;
-  margin: 2em 0 1em; }
+  margin: 2em 0 .25em; }
   h1 span {
     color: var(--accent); }
 
@@ -71,6 +71,9 @@ h4 {
   text-transform: uppercase; }
   h4 span {
     color: #697573; }
+
+.highlight {
+  color: var(--accent); }
 
 figure {
   margin: 1em 0; }
