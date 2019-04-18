@@ -128,11 +128,11 @@ nav {
       nav ul li:first-child {
         text-align: left; }
 
-.hero span {
+.hero .tags {
   font-size: 1em;
   margin-left: .75em;
   color: var(--accent); }
-  .hero span:first-of-type {
+  .hero .tags:first-of-type {
     margin-left: 0; }
 
 .content-block ul {
