@@ -185,11 +185,10 @@ nav {
       font-family: var(--heading); }
       .projects .card .card-text p {
         margin: 0;
-        line-height: 1em;
         color: var(--text-color); }
       .projects .card .card-text span {
         font-size: .5em;
-        margin-right: 1em;
+        margin: 0 1em 0 0;
         color: var(--accent); }
 
 .responsive-h {

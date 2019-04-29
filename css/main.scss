@@ -223,12 +223,12 @@ nav {
       font-family: var(--heading);
       p {
         margin: 0;
-        line-height: 1em;
+        // line-height: 1em;
         color: var(--text-color)
       }
       span {
         font-size: .5em;
-        margin-right: 1em;
+        margin: 0 1em 0 0;
         color: var(--accent);
       }
     }
