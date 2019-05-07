@@ -185,6 +185,7 @@ nav {
       font-family: var(--heading); }
       .projects .card .card-text p {
         margin: 0;
+        line-height: 1em;
         color: var(--text-color); }
       .projects .card .card-text span {
         font-size: .5em;
