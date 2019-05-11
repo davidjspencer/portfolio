@@ -3,7 +3,7 @@
   --background-light: #e1e4e3;
   --background-darker: #C6CCCA;
   --accent: #C5463E;
-  --accent-two: #3ebdc5;
+  --accent-two: #FCDD0F;
   --grg: 16px;
   --gcg: 16px;
   --heading: 'Roboto', sans-serif;
@@ -65,6 +65,8 @@ h3 {
     position: relative;
     bottom: -.25em;
     left: 0; }
+  h3 span.lowercase {
+    text-transform: lowercase; }
 
 h4 {
   font-family: var(--heading);
