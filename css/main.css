@@ -3,6 +3,7 @@
   --background-light: #e1e4e3;
   --background-darker: #C6CCCA;
   --accent: #C5463E;
+  --accent-two: #FCDD0F;
   --grg: 16px;
   --gcg: 16px;
   --heading: 'Roboto', sans-serif;
@@ -59,8 +60,8 @@ h3 {
     width: 40px;
     height: 3px;
     border-radius: 2px;
-    background-color: #FCDD0F;
-    box-shadow: 0 0 0 1px rgba(194, 200, 198, 0.5);
+    background-color: var(--accent-two);
+    box-shadow: 1px 1px 2px 1px rgba(198, 204, 202, 0.75);
     position: relative;
     bottom: -.25em;
     left: 0; }
