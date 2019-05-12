@@ -153,11 +153,17 @@ nav {
 }
 .hero {
   .tags {
+    position: relative;
     font-size: 1em;
     margin-left: .75em;
     color: var(--accent);
     &:first-of-type{
       margin-left: 0;
+    }
+    &::before {
+      content: '\00B7';
+      position: absolute;
+      left: -.25em;
     }
   }
 }
@@ -180,7 +186,6 @@ nav {
 .projects {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-gap: calc(2 * var(--grg)) var(--gcg);
   h3 {
     grid-column: 1 / span 12;
   }
