@@ -85,6 +85,11 @@ h4 {
     color: lighten(#393f3e, 20);
   }
 }
+h6 {
+  font-weight: 400;
+  color: var(--background-darker);
+  color: lighten(#393f3e, 20);
+}
 .highlight {
   color: var(--accent);
 }
@@ -233,12 +238,14 @@ nav {
       p {
         margin: 0;
         line-height: 1em;
-        color: var(--text-color)
-      }
-      span {
-        font-size: .5em;
-        margin: 0 1em 0 0;
-        color: var(--accent);
+        color: var(--text-color);
+        span {
+          display: inline-block;
+          line-height: .25em;
+          font-size: .5em;
+          margin: 0 1em 0 0;
+          color: var(--accent);
+        }
       }
     }
   }
@@ -334,7 +341,7 @@ footer {
     a {
       color: var(--background-light);
       text-decoration: none;
-      font-size: .75em;
+      //font-size: .75em;
       margin-top: 0;
     }
   }

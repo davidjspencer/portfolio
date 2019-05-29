@@ -75,6 +75,11 @@ h4 {
   h4 span {
     color: #697573; }
 
+h6 {
+  font-weight: 400;
+  color: var(--background-darker);
+  color: #697573; }
+
 .highlight {
   color: var(--accent); }
 
@@ -194,10 +199,12 @@ nav {
         margin: 0;
         line-height: 1em;
         color: var(--text-color); }
-      .projects .card .card-text span {
-        font-size: .5em;
-        margin: 0 1em 0 0;
-        color: var(--accent); }
+        .projects .card .card-text p span {
+          display: inline-block;
+          line-height: .25em;
+          font-size: .5em;
+          margin: 0 1em 0 0;
+          color: var(--accent); }
 
 .responsive-h {
   width: 100%;
@@ -268,7 +275,6 @@ footer {
     footer div a {
       color: var(--background-light);
       text-decoration: none;
-      font-size: .75em;
       margin-top: 0; }
 
 @media only screen and (max-device-width: 569px) {
