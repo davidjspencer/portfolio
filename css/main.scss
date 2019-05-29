@@ -194,6 +194,8 @@ nav {
   h3 {
     grid-column: 1 / span 12;
   }
+  .inactive {
+  }
   .card {
     grid-column: span 4;
     width: 100%;
