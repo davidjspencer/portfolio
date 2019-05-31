@@ -24,7 +24,7 @@ main {
 p {
   line-height: 1.5em; }
   p span {
-    color: var(--accent); }
+    color: #697573; }
 
 a.link {
   background: linear-gradient(to bottom, var(--accent) 0%, var(--accent) 100%);

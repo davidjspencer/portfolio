@@ -24,7 +24,7 @@ main {
 p {
   line-height: 1.5em;
   span {
-    color: var(--accent);
+    color: lighten(#393f3e, 20);
   }
 }
 a.link {
