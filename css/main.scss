@@ -12,35 +12,6 @@
 * {
   box-sizing: border-box;
 }
-#privacy {
-  display: none;
-  position: fixed;
-  width: 100vw;
-  height: 20vh;
-  bottom: 0;
-  left: 0;
-  z-index: 100;
-  background: var(--background-darker);
-  .container {
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  button {
-    margin-left: 1em;
-    padding: .5em 1em;
-    background: var(--text-color);
-    color: var(--background-light);
-    font-family: var(--heading);
-    font-size: .75em;
-    &:hover {
-      background: var(--accent);
-
-    }
-  }
-
-}
 body,
 main {
   display: inline-grid;
