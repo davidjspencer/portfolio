@@ -1,0 +1,50 @@
+Arguments: 
+  /Users/davidspencer/homebrew/Cellar/node/12.1.0/bin/node /Users/davidspencer/homebrew/Cellar/yarn/1.16.0/libexec/bin/yarn.js global bin
+
+PATH: 
+  /Users/davidspencer/.rvm/gems/ruby-2.4.2/bin:/Users/davidspencer/.rvm/gems/ruby-2.4.2@global/bin:/Users/davidspencer/.rvm/rubies/ruby-2.4.2/bin:/Users/davidspencer/homebrew/bin:/usr/local/heroku/bin:davidspencer/mongodb/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/git/bin:/Users/davidspencer/.rvm/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  12.1.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  SyntaxError: /Users/davidspencer/projects/UX_Portfolio_Site/package.json: Unexpected string in JSON at position 193
+      at JSON.parse (<anonymous>)
+      at /Users/davidspencer/homebrew/Cellar/yarn/1.16.0/libexec/lib/cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (/Users/davidspencer/homebrew/Cellar/yarn/1.16.0/libexec/lib/cli.js:304:30)
+      at /Users/davidspencer/homebrew/Cellar/yarn/1.16.0/libexec/lib/cli.js:315:13
+
+npm manifest: 
+  {
+    "name": "ux_portfolio_site",
+    "version": "1.0.0",
+    "description": "Portfolio website",
+    "main": "index.js",
+    "scripts": {
+      "sass": "sass --watch ./css/main.scss:./css/style.css"
+      "browser": ""sass": "browser-sync start --server --files '*.html, css/*.css'"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/davidjspencer/portfolio.git"
+    },
+    "author": "David Spencer",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/davidjspencer/portfolio/issues"
+    },
+    "homepage": "https://github.com/davidjspencer/portfolio#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
